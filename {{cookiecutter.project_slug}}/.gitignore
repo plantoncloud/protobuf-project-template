@@ -1,0 +1,10 @@
+generated
+target
+.idea
+!/zzjava/gradle/wrapper/gradle-wrapper.jar
+/zzjava/build
+/zzjava/.gradle
+.lde
+/zzjava/bin
+.pbe
+.planton-build-engine

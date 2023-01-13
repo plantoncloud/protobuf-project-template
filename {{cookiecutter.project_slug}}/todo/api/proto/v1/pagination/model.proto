@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package todo.api.proto.v1.pagination;
+
+message PageInfo {
+  int32 num = 1;
+  int32 size = 2;
+}

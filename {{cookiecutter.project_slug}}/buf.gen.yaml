@@ -1,0 +1,32 @@
+version: v1
+managed:
+  enabled: true
+  optimize_for: SPEED
+  java_package_prefix:
+    default: com
+    except:
+      - google/protobuf/empty
+      - google/protobuf/timestamp
+  go_package_prefix:
+    default: {{cookiecutter.go_module}}/zzgo
+    except:
+      - google/protobuf/empty
+      - google/protobuf/timestamp
+  java_multiple_files: true
+  java_string_check_utf8: false
+plugins:
+  - name: java
+    out: generated/java
+  - name: grpc-java
+    out: generated/java
+  - name: go
+    out: generated/go
+  - name: go-grpc
+    out: generated/go
+    opt: require_unimplemented_servers=false
+  - name: swift
+    out: zzswift
+    opt: FileNaming=PathToUnderscores,Visibility=Public
+  - name: grpc-swift
+    out: zzswift
+    opt: FileNaming=PathToUnderscores,Visibility=Public

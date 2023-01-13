@@ -1,0 +1,7 @@
+.gradle
+build
+!/gradle/wrapper/graddle-wrapper.jar
+.lde
+/zzjava/bin
+/zzjava/build
+.idea

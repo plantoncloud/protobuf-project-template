@@ -1,0 +1,5 @@
+{
+    "project_slug": "protos",
+    "go_module": "github.com/plantoncloud/template-protobuf",
+    "planton_cloud_product_id": "planton-todo"
+}
