@@ -30,3 +30,5 @@ plugins:
   - name: grpc-swift
     out: zzswift
     opt: FileNaming=PathToUnderscores,Visibility=Public
+  - plugin: buf.build/bufbuild/connect-kotlin
+    out: generated/kotlin
